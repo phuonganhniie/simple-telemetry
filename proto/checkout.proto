@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "github.com/phuonganhniie/simpleTelemetry/proto";
+
+package checkout;
+
+service Checkout {
+    rpc DoCheckOut(CheckOutRequest) returns (CheckOutResponse);
+}
+
+message CheckOutRequest {
+    repeated int32 itemsID = 1;
+}
+
+message CheckOutResponse {
+    int32 totalAmount = 1;
+}
