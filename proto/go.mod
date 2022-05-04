@@ -1,4 +1,4 @@
-module github.com/phuonganhnii/simpleTelemetry/proto
+module github.com/phuonganhniie/simpleTelemetry/proto
 
 go 1.17
 
