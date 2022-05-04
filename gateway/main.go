@@ -28,10 +28,9 @@ func main() {
 	// propagate the trace via gRPC to the checkout service
 	conn, err := grpc.Dial(
 		checkOutAdd,
-		grpc.WithInsecure,
-		grpc.UnaryInterceptor(otelgrpc.UnaryServerInterceptor()),
-		grpc.WithStreamInterceptor(otelgrpc.StreamClientInterceptor()),
-	)
+		grpc.WithInsecure(),
+		grpc.WithUnaryInterceptor(otelgrpc.UnaryClientInterceptor()),
+		grpc.WithStreamInterceptor(otelgrpc.StreamClientInterceptor()))
 
 	if err != nil {
 		log.Fatalf("did not connect: %v", err)
@@ -43,6 +42,6 @@ func main() {
 	router := http.NewServeMux()
 	router.HandleFunc("/api/checkout", handler.CheckOutHandler(c))
 
-	fmt.Println("HTTP server listening at: ", httpAdd)
+	fmt.Println("HTTP server listening at port", httpAdd)
 	log.Fatal(http.ListenAndServe(httpAdd, router))
 }
