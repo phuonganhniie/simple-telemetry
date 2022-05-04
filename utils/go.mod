@@ -3,6 +3,7 @@ module github.com/phuonganhniie/simpleTelemetry/utils
 go 1.17
 
 require (
+	github.com/streadway/amqp v1.0.0
 	go.opentelemetry.io/otel v1.7.0
 	go.opentelemetry.io/otel/exporters/jaeger v1.7.0
 	go.opentelemetry.io/otel/sdk v1.7.0
