@@ -21,5 +21,6 @@ func main() {
 		log.Fatalf("failed to create tracer: %v", err)
 	}
 
-	channel, closeConn := utils.ConnectAmqp()
+	channel, closeConn := utils.ConnectAmqp(amqpUser, amqpPass, amqpHost, amqpPort)
+	defer closeConn()
 }

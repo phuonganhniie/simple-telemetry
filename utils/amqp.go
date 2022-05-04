@@ -8,6 +8,7 @@ import (
 )
 
 func ConnectAmqp(user, pass, host, port string) (*amqp.Channel, func() error) {
+	// connect to rabbitmq server
 	address := fmt.Sprintf("amqp://%s:%s@%s:%s/", user, pass, host, port)
 
 	conn, err := amqp.Dial(address)
