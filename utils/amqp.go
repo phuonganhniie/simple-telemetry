@@ -20,6 +20,7 @@ func ConnectAmqp(user, pass, host, port string) (*amqp.Channel, func() error) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	fmt.Println("Connect to rabbitmq server successfully!")
 
 	err = ch.ExchangeDeclare("exchange", "direct", true, false, false, false, nil)
 	if err != nil {
