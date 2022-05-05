@@ -3,8 +3,8 @@ module github.com/phuonganhniie/simpleTelemetry/checkout
 go 1.17
 
 require (
-	github.com/phuonganhniie/simpleTelemetry/proto v0.0.0-20220504163505-15e39c5ca386
-	github.com/phuonganhniie/simpleTelemetry/utils v0.0.0-20220504163505-15e39c5ca386
+	github.com/phuonganhniie/simpleTelemetry/proto v0.0.0-20220505032622-292668d3742d
+	github.com/phuonganhniie/simpleTelemetry/utils v0.0.0-20220505033900-af0023407fb9
 	github.com/streadway/amqp v1.0.0
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.32.0
 	go.opentelemetry.io/otel v1.7.0

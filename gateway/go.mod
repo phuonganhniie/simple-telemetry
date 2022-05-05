@@ -3,8 +3,8 @@ module github.com/phuonganhniie/simpleTelemetry/gateway
 go 1.17
 
 require (
-	github.com/phuonganhniie/simpleTelemetry/proto v0.0.0-20220504142518-b24b6cf9b072
-	github.com/phuonganhniie/simpleTelemetry/utils v0.0.0-20220504142518-b24b6cf9b072
+	github.com/phuonganhniie/simpleTelemetry/proto v0.0.0-20220505032622-292668d3742d
+	github.com/phuonganhniie/simpleTelemetry/utils v0.0.0-20220505033900-af0023407fb9
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.32.0
 	go.opentelemetry.io/otel v1.7.0
 	google.golang.org/grpc v1.46.0
@@ -14,6 +14,7 @@ require (
 	github.com/go-logr/logr v1.2.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/streadway/amqp v1.0.0 // indirect
 	go.opentelemetry.io/otel/exporters/jaeger v1.7.0 // indirect
 	go.opentelemetry.io/otel/sdk v1.7.0 // indirect
 	go.opentelemetry.io/otel/trace v1.7.0 // indirect
